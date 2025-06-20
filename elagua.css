@@ -1,0 +1,91 @@
+body{
+    background-color: blueviolet;
+  margin: 0px;
+}
+.cuerpo {
+  position: absolute; top:1%; left:1%;
+  transform: translate(50% 50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding:20px;
+  border-radius:8px;
+  font-size: 10px;
+}
+@keyframes crecer {
+            0%,100% {
+                transform: scale(0.5);
+            }
+            50% {
+                transform: scale(1);
+            }
+}
+@keyframes aparecer {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes rotar {
+  from{ transform: rotate(10deg); }
+  to{ transform: rotate(360deg); } 
+}
+.imagen{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+    
+.h2{
+    font-family: Arial, sans-sherif;
+    font-size: 30px;
+    text-align: center;
+    animation: crecer 8s infinite;
+}
+.h3{
+    font-family: Arial, sans-sherif;
+    font-size: 25px;
+    animation: aparecer 5s ;
+}
+.h4{
+    font-family: Arial, sans-sherif;
+    font-size: 25px;
+    animation: aparecer 10s ;
+    
+}
+.imagen2 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-style: double ;
+    border-color: greenyellow;
+  border-radius: 0% 50% 0% 50%;
+    border-width: 5px ;
+    padding: 12px 15px;
+  transition: background-color 4s ease;
+  display: inline-block;
+  
+}
+.imagen2:hover {
+    width: 400px;
+    height: 400px;
+    margin: auto px;
+  border-radius: 50% 50%;
+  transform: scale(1.5);
+  align-content: center;
+  border-style: double;
+  background-color: gold;
+  transition: all 10s ease;
+  animation: rotar 5s linear infinite ;
+}
+.p{
+    font-family: Arial, sans-sherif;
+    font-size: 20px;
+    animation: crecer 5s infinite;
+    text-align: center;
+}
+.br{
+    font-family: Arial, sans-sherif;
+    font-size: 20px;
+    animation: crecer 5s infinite;
+    text-align: center;
+    
+}
+
